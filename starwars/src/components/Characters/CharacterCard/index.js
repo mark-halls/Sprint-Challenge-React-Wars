@@ -8,15 +8,16 @@ const Card = styled.div`
   padding: 10px;
   margin: 10px;
   width: 80%;
+  opacity: 0.85;
 `;
 
 const CharacterName = styled.p`
-  font-size: 3rem;
+  font-size: 1.5em;
   margin: 5px;
 `;
 
 const BirthDate = styled.p`
-  font-size: 2rem;
+  font-size: 1em;
   margin: 0;
 `;
 const CharacterCard = props => {
