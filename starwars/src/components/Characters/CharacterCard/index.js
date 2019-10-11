@@ -11,23 +11,28 @@ const Card = styled.div`
   opacity: 0.85;
 `;
 
-const CharacterName = styled.p`
+const Name = styled.p`
   font-size: 1.5em;
   margin: 5px;
 `;
 
-const BirthDate = styled.p`
+const Attributes = styled.p`
   font-size: 1em;
+  padding: 5px;
   margin: 0;
 `;
+
 const CharacterCard = props => {
   if (!props.characterData) {
     return <p>Loading...</p>;
   } else {
     return (
       <Card>
-        <CharacterName>{props.characterData.name}</CharacterName>
-        <BirthDate>Born: {props.characterData.birth_year}</BirthDate>
+        <Name>{props.characterData.name}</Name>
+        <Attributes>Born: {props.characterData.birth_year}</Attributes>
+        <Attributes>Hair Color: {props.characterData.hair_color}</Attributes>
+        <Attributes>Eye Color: {props.characterData.eye_color}</Attributes>
+        <Attributes>Height: {props.characterData.height}</Attributes>
       </Card>
     );
   }
